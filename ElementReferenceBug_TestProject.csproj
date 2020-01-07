@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>netcoreapp3.0</TargetFramework>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <TypeScriptCompile Include="Client\Core\Client.Core.ts" />
+      <TypeScriptCompile Include="Client\Core\Client.Helpers.ts" />
+      <TypeScriptCompile Include="Client\Core\Client.ImportExportcontroller.ts" />
+      <TypeScriptCompile Include="Client\GlobalThis.d.ts" />
+      <TypeScriptCompile Include="Client\OriWeb.ts" />
+    </ItemGroup>
+
+</Project>

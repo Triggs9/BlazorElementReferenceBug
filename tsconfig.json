@@ -1,0 +1,43 @@
+﻿{
+  "compilerOptions": {
+    "strict": true, // Includes: alwaysStrict, noImplicitAny, noImplicitThis, strictNullChecks
+    "noImplicitThis": false, // allows var DynamicObject: new <T>(obj: T) => T = function (obj: any)
+    "strictPropertyInitialization": false,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitReturns": true,
+    "allowSyntheticDefaultImports": true,
+    "noEmitOnError": true,
+    
+    "incremental": true,
+    
+    "removeComments": true,
+    "skipLibCheck": true,
+    "target": "es5",
+    "module": "esnext", // Could be es6 but its in case we use Dynamic import()
+    "moduleResolution": "Node",
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    
+    //"inlineSourceMap": true,
+    "inlineSources": true,
+    "sourceMap": true,
+    
+    "typeRoots": [
+      "node_modules/@types"
+    ],
+    "lib": [
+      "dom",
+      "es2015.promise",
+      "es5",
+      "es6",
+      "es2017"
+    ]
+  },
+  "exclude": [
+    "node_modules",
+    "wwwroot",
+    "obj",
+    "bin"
+  ]
+}

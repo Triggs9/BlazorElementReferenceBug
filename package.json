@@ -1,0 +1,49 @@
+{
+  "version": "1.0.0",
+  "name": "asp.net",
+  "private": true,
+  "scripts": {
+    "build:dev": "webpack --config webpack.dev.js",
+    "build:dev-watch": "webpack --config webpack.dev.js --watch",
+    "build:prod": "webpack --config webpack.prod.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "@microsoft/signalr": "^3.1.0",
+    "@types/gsap": "^1.20.2",
+    "@types/hammerjs": "^2.0.36",
+    "@types/jquery": "^3.3.31",
+    "@types/node": "12.12.6",
+    "@types/signalr": "^2.2.35",
+    "@types/source-map-support": "0.5.0",
+    "clean-webpack-plugin": "^0.1.16",
+    "css-loader": "^0.28.7",
+    "extract-text-webpack-plugin": "^3.0.0",
+    "file-loader": "^0.11.2",
+    "html-loader": "^0.5.1",
+    "html-webpack-plugin": "^3.2.0",
+    "less": "^2.7.2",
+    "less-loader": "^4.0.5",
+    "node-sass": "^4.13.0",
+    "script-ext-html-webpack-plugin": "2.1.4",
+    "source-map-loader": "^0.2.1",
+    "source-map-support": "0.5.16",
+    "style-loader": "^0.18.2",
+    "ts-loader": "^6.2.1",
+    "typescript": "^3.7.3",
+    "webpack": "^4.41.2",
+    "tapable": "^1.1.3",
+    "webpack-cli": "^3.3.10",
+    "webpack-merge": "^4.1.0"
+  },
+  "dependencies": {
+    "gsap": "^2.1.3",
+    "hammerjs": "^2.0.8",
+    "jquery": "^3.4.1"
+  },
+  "-vs-binding": {
+    "ProjectOpened": [
+      "build:dev-watch"
+    ]
+  }
+}

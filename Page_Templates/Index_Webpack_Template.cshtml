@@ -1,0 +1,27 @@
+﻿@page "/"
+@using ElementReferenceBug_TestProject.Core.HTMLComponents
+@namespace ElementReferenceBug_TestProject.Pages
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@*
+*@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <script src="_framework/blazor.server.js" autostart="false"></script>
+        
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>ElementReferenceBug_TestProject</title>
+        <base href="~/"/>
+        <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css"/>
+        <link href="css/site.css" rel="stylesheet"/>
+        
+        <% for (var jsFile in htmlWebpackPlugin.files.js) { %>
+        <script defer src="<%= htmlWebpackPlugin.files.js[jsFile] %>"></script>
+        <% } %>
+    </head>
+    <body>
+        @(await Html.RenderComponentAsync<OriMainPage>(RenderMode.ServerPrerendered))
+    </body>
+</html>
