@@ -39,7 +39,7 @@
   "dependencies": {
     "gsap": "^2.1.3",
     "hammerjs": "^2.0.8",
-    "jquery": "^3.4.1"
+    "jquery": "^3.5.0"
   },
   "-vs-binding": {
     "ProjectOpened": [
